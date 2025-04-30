@@ -15,65 +15,13 @@ description: Ambulance Créteil
                 <p>Pour votre déplacement médical, <strong>Ambulance Créteil</strong> met à votre disposition des ambulanciers réactifs, qualifiés, ponctuels et dévoués. Notre équipe d'ambulanciers vous aidera à vous installer dans le véhicule (en position allongée ou assise), vous aidera à sortir pour rejoindre votre clinique ou cabinet médical. </p>
                 <p><strong>Ambulance Créteil</strong> garantit des soins préhospitaliers de haut niveau durant le transfert des patients. <strong>Nos ambulanciers sont titulaires d’un diplôme DEA et de nombreuses années d'expérience professionnelle. </strong>Ils ont suivi des cours approfondis en secourisme et en soins infirmiers, dont ils peuvent intervenir dans des situations d'urgence et prodiguer des premiers soins. Ils sont aptes à vous proposer des soins médicaux efficaces et urgents, quelle que soit la situation : accident, transfert interhospitalier, maternité, etc.</p>
             </div>
-            <div class="col-sm-6"><br><div class="pre-reservation">
-                <h3>Votre ambulance en quelques clics </h3>
-                <form action="https://formspree.io/f/xjkwvzkn" method="POST" class="p20">
-                    <div class="row">
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 clabel">
-                            <div class="form-group has-feedback ico1">
-                                <input type="text" name="nom" class="form-control" placeholder="Nom">
-                            </div>
-                        </div>
-            
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6  clabel">
-                            <div class="form-group has-feedback ico2">
-                                <input type="tel" name="telephone" class="form-control" placeholder="Téléphone">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 clabel ">
-                            <div class="padl form-group has-feedback ico3">
-                                <input type="email" name="email" class="form-control" placeholder="E-mail">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="form-group has-feedback">
-                                <div class="input-group bootstrap-datepicker">
-                                    <span class="input-group-addon"><span class="fa fa-calendar fa-fw"></span></span>
-                                    <input type="date" name="date-prise-en-charge" class="form-control"
-                                        placeholder="Date de la prise en charge">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group has-feedback">
-                                <div class="input-group clockpicker">
-                                    <span class="input-group-addon"><span class="fa fa-clock-o fa-fw"></span></span>
-                                    <input type="time" name="heure-prise-en-charge" class="form-control" placeholder="Heure">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group has-feedback ico4">
-                                <textarea name="message" class="form-control" rows="4" placeholder="Message"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-left">
-                        <input id="btSubmit" class="button" type="submit" value="Envoyer">
-                    </div>
-                    <br>
-                </form>
-            </div></div>
+            <div class="col-sm-6"><br>{% include pre-devis.html %}</div>
         </div>
         <p>Pour toute demande de renseignements sur notre service, n'hésitez pas à contacter Ambulance Créteil au <a href="tel:<?= $conf_phone1 ?>"><?= $call_phone1 ?></a> ou veuillez remplir notre formulaire en ligne. Nous vous répondrons dans les plus brefs délais.</p>
         <br>
         <h2 class="text-center">SERVICE D'AMBULANCE FIABLE EN TOUT TEMPS</h2>
         <div class="row">
-            <div class="col-sm-6"><img src="./assets/img/img6.jpg" alt="Derrière camion ambulance" class="img-responsive"></div>
+            <div class="col-sm-6"><img src="{{ site.baseurl }}/ressources/img/img6.jpg" alt="Derrière camion ambulance" class="img-responsive"></div>
             <div class="col-sm-6">
                 <p>Nous sommes à votre disposition 24h/7. Nous vous conduirons à vos rendez-vous médicaux ou hospitalisations à temps voulu. Notre entreprise s'engage également à vous assurer une intervention rapide, donc nous serons à votre domicile dans l'heure suivant votre appel. Avec <strong>Ambulance Créteil</strong>, vous voyagerez en toute sécurité et dans le plus grand confort grâce à nos ambulances sophistiquées, spacieuses et bien équipées.</p>
                 <p>Pour toute demande de renseignements sur notre service, n'hésitez pas à contacter Ambulance Créteil au 01 43 91 04 28 ou veuillez remplir notre formulaire en ligne. Nous vous répondrons dans les plus brefs délais.</p>
@@ -87,12 +35,12 @@ description: Ambulance Créteil
                 <p>Nos véhicules sont régulièrement entretenus et répondent aux normes d'hygiène et de sécurité. Lors de cette période de crise sanitaire, nous veillons également à ce que nos ambulances et nos équipements soient bien nettoyés après chaque transfert.</p>
                 <p>Pour toute demande de renseignements sur notre service, n'hésitez pas à contacter <strong>Ambulance Créteil</strong> au <a href="tel:{{ site.data.company.phone1 }}">{{ site.data.company.phone1 }}</a> ou veuillez remplir notre <a href="{{ site.baseurl }}/contact">formulaire en ligne</a>. Nous vous répondrons dans les plus brefs délais.</p>
             </div>
-            <div class="col-sm-6"><br><img src="./assets/img/img3.jpg" alt="Camion ambulance 3" class="img-responsive"></div>
+            <div class="col-sm-6"><br><img src="{{ site.baseurl }}/ressources/img/img3.jpg" alt="Camion ambulance 3" class="img-responsive"></div>
         </div>
         <br>
         <h2>DES SOINS AMBULANCIERS RAPIDES OU URGENTS</h2>
         <div class="row">
-            <div class="col-sm-6"><img src="./assets/img/img4.jpg" alt="couloir hopital" class="img-responsive"></div>
+            <div class="col-sm-6"><img src="{{ site.baseurl }}/ressources/img/img4.jpg" alt="couloir hopital" class="img-responsive"></div>
             <div class="col-sm-6">
                 <p><strong>Les urgences médicales peuvent survenir à toute heure, </strong>très tôt dans la matinée et très tard dans la soirée. Nous intervenons dans les plus brefs délais pour fournir des services d'ambulance aux personnes malades ou blessées. Nous proposons un service de transport d'ambulance rapide et ponctuel à Créteil. Notre personnel courtois, attentionné et bien formé viendra vous chercher et vous conduira dans un véhicule conventionné.</p>
                 <p><strong>Ambulance Créteil</strong> intervient également dans des situations critiques (accouchement, crise cardiaque, fracture, blessure, accident, etc.). Veuillez nous contacter le plus rapidement possible pour des soins préhospitaliers rapides ou urgents. Nous sommes disponibles 24h/7, nous serons à domicile ou sur le lieu d'intervention dans les plus brefs délais.</p>
@@ -106,10 +54,10 @@ description: Ambulance Créteil
                 <p>Les Véhicules Sanitaires Légers (VSL) sont des véhicules utilisés pour transporter des patients assis. Ils sont dotés des équipements de secourisme nécessaires et des ambulanciers pour assister les patients et surtout veiller à leur bien-être durant le trajet.</p>
                 <p><strong>Nous disposons de VSL spacieux, </strong>bien aménagés et confortables. Nous vous proposons de vous conduire à votre rendez-vous médical à temps voulu. Notre personnel qualifié et attentif vous garantit un accompagnement de qualité. </p>
             </div>
-            <div class="col-sm-6"><img src="./assets/img/img8.jpg" alt="Camion ambulance 2" class="img-responsive"></div>
+            <div class="col-sm-6"><img src="{{ site.baseurl }}/ressources/img/img8.jpg" alt="Camion ambulance 2" class="img-responsive"></div>
         </div><br>
         <div class="row">
-            <div class="col-sm-6"><img src="./assets/img/imgentreprise.jpg" alt="Médecins devant radio" class="img-responsive"></div>
+            <div class="col-sm-6"><img src="{{ site.baseurl }}/ressources/img/imgentreprise.jpg" alt="Médecins devant radio" class="img-responsive"></div>
             <div class="col-sm-6">
                 <h2 class="text-center">SERVICE D'AMBULANCE POUR LES ÉVÉNEMENTS PUBLICS </h2>
                 <p><strong>Ambulance Créteil </strong>encourage fortement tous les organisateurs d’événements à considérer la sécurité et le bien-être des spectateurs et des participants lors d'un événement. Pour cette raison, nous leur recommandons d'opter pour le service d'une ambulance. L’équipe Ambulance Créteil travaillera avec vous pour établir les mesures d’intervention les plus appropriées et pour élaborer un plan de gestion des urgences sanitaires. </p>
