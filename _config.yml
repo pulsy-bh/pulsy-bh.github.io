@@ -26,7 +26,7 @@
 #  Google search results) and in your feed.xml site description.
 #baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pulsy-bh.github.io" # Remplacez par votre nom d'utilisateur GitHub
-baseurl: "" # Laissez vide pour un site à la racine
+baseurl: "https://pulsy-bh.github.io" # Laissez vide pour un site à la racine
 
 # Build settings
 plugins:
