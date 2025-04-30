@@ -63,3 +63,10 @@ sass:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+# Désactiver le thème par défaut
+theme: null
+remote_theme: null
+
+# Si vous utilisez GitHub Pages, désactivez également le thème par défaut de GitHub Pages
+github: 
+  is_project_page: false
