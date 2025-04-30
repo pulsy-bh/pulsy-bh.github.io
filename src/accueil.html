@@ -9,7 +9,7 @@ TODO: deuxière hearder pour form devis court
 <h1>Welcome to Shadaloo</h1>
 <h2>Informations utiles</h2>
 <ul>
-    <li>Route : <b>{% link devis.html %}</b></li>
+    <li>Route : <b><a href="{{ '/devis' | relative_url }}">Devis</a></b></li>
     <li>1er téléphone: {{ site.data.company.phones[0] }}</li>
     {% for phone in site.data.company.phones %}
         <li>Liste des téléphones {{ forloop.index }}: {{ phone }}</li>
