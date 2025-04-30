@@ -15,7 +15,59 @@ description: Ambulance Ivry-sur-Seine
                 <p><strong>Ambulance Ivry-sur-Seine se charge de transporter des personnes malades, blessées, handicapées ou à mobilité réduite </strong>vers des hôpitaux pour des soins, des examens médicaux et des thérapies (sous rendez-vous ou en urgence). Nous transportons nos patients en position semi-assise ou couchée et nous leur proposons une bonne surveillance lors du trajet. Nous avons aussi comme tâche d'assister les patients, de les aider à installer confortablement dans l'ambulance, de les rassurer ou de les réconforter. Pendant la période de transfert, nous fournissons des soins et une assistance en fonction de votre état de santé. </p>
                 <p><strong>Nous sommes conformes à la réglementation générale des services ambulanciers. </strong>Nous avons pour but de fournir à tous nos clients un service rapide, efficace et de qualité à chacun de nos patients. Nos ambulances sont confortables, spacieuses et entièrement équipées. Ainsi, vous pouvez voyager en toute sécurité.</p>
             </div>
-            <div class="col-sm-6"><br>{% include devis.html %}</div>
+            <div class="col-sm-6"><br><div class="pre-reservation">
+                <h3>Votre ambulance en quelques clics </h3>
+                <form action="https://formspree.io/f/xjkwvzkn" method="POST" class="p20">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 clabel">
+                            <div class="form-group has-feedback ico1">
+                                <input type="text" name="nom" class="form-control" placeholder="Nom">
+                            </div>
+                        </div>
+            
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6  clabel">
+                            <div class="form-group has-feedback ico2">
+                                <input type="tel" name="telephone" class="form-control" placeholder="Téléphone">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 clabel ">
+                            <div class="padl form-group has-feedback ico3">
+                                <input type="email" name="email" class="form-control" placeholder="E-mail">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group has-feedback">
+                                <div class="input-group bootstrap-datepicker">
+                                    <span class="input-group-addon"><span class="fa fa-calendar fa-fw"></span></span>
+                                    <input type="date" name="date-prise-en-charge" class="form-control"
+                                        placeholder="Date de la prise en charge">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group has-feedback">
+                                <div class="input-group clockpicker">
+                                    <span class="input-group-addon"><span class="fa fa-clock-o fa-fw"></span></span>
+                                    <input type="time" name="heure-prise-en-charge" class="form-control" placeholder="Heure">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group has-feedback ico4">
+                                <textarea name="message" class="form-control" rows="4" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <input id="btSubmit" class="button" type="submit" value="Envoyer">
+                    </div>
+                    <br>
+                </form>
+            </div></div>
         </div>
         <p>Pour une urgence ou pour une consultation médicale sous rendez-vous, n’hésitez pas à réserver <strong>Ambulance Ivry-sur-Seine au <a href="tel:{{ site.data.company.phone1 }}">{{ site.data.company.phone1 }}</a> ou en ligne sur notre site.</strong> Nous vous répondrons rapidement et prendrons en charge votre requête ou votre urgence. </p>
         <br>

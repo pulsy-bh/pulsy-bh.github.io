@@ -15,7 +15,59 @@ description: Ambulance Créteil
                 <p>Pour votre déplacement médical, <strong>Ambulance Créteil</strong> met à votre disposition des ambulanciers réactifs, qualifiés, ponctuels et dévoués. Notre équipe d'ambulanciers vous aidera à vous installer dans le véhicule (en position allongée ou assise), vous aidera à sortir pour rejoindre votre clinique ou cabinet médical. </p>
                 <p><strong>Ambulance Créteil</strong> garantit des soins préhospitaliers de haut niveau durant le transfert des patients. <strong>Nos ambulanciers sont titulaires d’un diplôme DEA et de nombreuses années d'expérience professionnelle. </strong>Ils ont suivi des cours approfondis en secourisme et en soins infirmiers, dont ils peuvent intervenir dans des situations d'urgence et prodiguer des premiers soins. Ils sont aptes à vous proposer des soins médicaux efficaces et urgents, quelle que soit la situation : accident, transfert interhospitalier, maternité, etc.</p>
             </div>
-            <div class="col-sm-6"><br>{% include devis.html %}</div>
+            <div class="col-sm-6"><br><div class="pre-reservation">
+                <h3>Votre ambulance en quelques clics </h3>
+                <form action="https://formspree.io/f/xjkwvzkn" method="POST" class="p20">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 clabel">
+                            <div class="form-group has-feedback ico1">
+                                <input type="text" name="nom" class="form-control" placeholder="Nom">
+                            </div>
+                        </div>
+            
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6  clabel">
+                            <div class="form-group has-feedback ico2">
+                                <input type="tel" name="telephone" class="form-control" placeholder="Téléphone">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 clabel ">
+                            <div class="padl form-group has-feedback ico3">
+                                <input type="email" name="email" class="form-control" placeholder="E-mail">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group has-feedback">
+                                <div class="input-group bootstrap-datepicker">
+                                    <span class="input-group-addon"><span class="fa fa-calendar fa-fw"></span></span>
+                                    <input type="date" name="date-prise-en-charge" class="form-control"
+                                        placeholder="Date de la prise en charge">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group has-feedback">
+                                <div class="input-group clockpicker">
+                                    <span class="input-group-addon"><span class="fa fa-clock-o fa-fw"></span></span>
+                                    <input type="time" name="heure-prise-en-charge" class="form-control" placeholder="Heure">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group has-feedback ico4">
+                                <textarea name="message" class="form-control" rows="4" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <input id="btSubmit" class="button" type="submit" value="Envoyer">
+                    </div>
+                    <br>
+                </form>
+            </div></div>
         </div>
         <p>Pour toute demande de renseignements sur notre service, n'hésitez pas à contacter Ambulance Créteil au <a href="tel:<?= $conf_phone1 ?>"><?= $call_phone1 ?></a> ou veuillez remplir notre formulaire en ligne. Nous vous répondrons dans les plus brefs délais.</p>
         <br>
