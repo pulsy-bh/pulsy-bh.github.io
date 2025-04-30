@@ -1,0 +1,136 @@
+---
+layout: default
+permalink: /reservation
+title: Réservation
+description: Réservez votre ambulance en ligne
+---
+
+<section class="one">
+    <div class="container">
+        <div id="devis">
+            <h1 id="formD">{{ site.data.company.name }} - Réservation en ligne</h1>
+            <hr>
+            <br><br>
+
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <form action="https://formspree.io/f/movdqbjl" method="POST">
+
+                        <fieldset>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group has-feedback <?=$data['prenom']['status']?>">
+                                        <label for="prenom">Prénom</label>
+                                        <input type="text" class="form-control" id="prenom" name="prenom"
+                                            placeholder="Prénom">
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-group has-feedback <?=$data['nom']['status']?>">
+                                        <label for="nom">Nom</label>
+                                        <input type="text" class="form-control" id="nom" name="nom" placeholder="Nom">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group has-feedback <?=$data['email']['status']?>">
+                                        <label for="email">E-mail</label>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="text@exemple.fr">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group has-feedback <?=$data['telephone']['status']?>">
+                                        <label for="telephone">Téléphone</label>
+                                        <input type="text" class="form-control" id="telephone" name="telephone"
+                                            placeholder="06 00 00 00 00">
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group has-feedback <?=$data['adresse-depart']['status']?>">
+                                <label for="adresse-depart">Adresse de départ</label>
+                                <input type="text" class="form-control" id="adresse-depart" name="adresse-depart"
+                                    placeholder="Adresse-depart">
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group has-feedback <?=$data['date-aller']['status']?>">
+                                        <label for="date-aller">Date (aller)</label>
+                                        <div class="input-group bootstrap-datepicker">
+                                            <input type="text" class="form-control" id="date-aller" name="date-aller"
+                                                placeholder="Date de départ">
+                                            <span class="input-group-addon"><span
+                                                    class="fa fa-calendar fa-fw"></span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group has-feedback <?=$data['heure-aller']['status']?>">
+                                        <label for="heure-aller">Heure (aller)</label>
+                                        <div class="input-group clockpicker">
+                                            <input type="text" class="form-control" id="heure-aller" name="heure-aller"
+                                                placeholder="Heure de départ">
+                                            <span class="input-group-addon"><span
+                                                    class="fa fa-clock-o fa-fw"></span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+
+
+
+                        </fieldset>
+                        <hr>
+                        <fieldset>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group has-feedback <?=$data['adresse-destination']['status']?>">
+                                        <label for="adresse-destination">Adresse de destination</label>
+                                        <input type="text" class="form-control" id="adresse-destination"
+                                            name="adresse-destination" placeholder="Adresse">
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group has-feedback <?=($form_is_submitted)?'has-success':''?>">
+                                        <label>Trajet</label>
+                                        <div class="checkbox" style="margin-top: 0;">
+                                            <input type="checkbox" id="trajet-aller-simple" name="trajet-aller-simple"
+                                                value="Oui" checked>
+                                            <label for="trajet-aller-simple">Aller simple</label>
+                                        </div>
+                                        <div class="checkbox" style="margin-top: 0;">
+                                            <input type="checkbox" id="trajet-aller-retour" name="trajet-aller-retour"
+                                                value="Oui">
+                                            <label for="trajet-aller-retour">Aller/Retour</label>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <hr>
+                </div>
+            </div>
+            <div class="form-group has-feedback <?=$data['message']['status']?>">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="6"></textarea>
+            </div>
+            <br>
+            <div class="text-center">
+                <button type="reset" class="button">Annuler</button>
+                <button type="submit" name="devis" class="button">Envoyer</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</section>
