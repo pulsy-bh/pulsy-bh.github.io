@@ -71,6 +71,6 @@ sass:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-theme: ""
-
-remote_theme: ""
+# Désactive complètement les thèmes pour utiliser le layout personnalisé
+theme: jekyll-theme-minimal
+remote_theme: pages-themes/minimal
