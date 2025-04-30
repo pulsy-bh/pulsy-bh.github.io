@@ -41,6 +41,12 @@ layouts_dir         : _layouts # Don't rename this, watch wouldn't't work
 data_dir            : _data # Don't rename this, watch wouldn't't work
 includes_dir        : _includes # Don't rename this, watch wouldn't't work
 
+include:
+  - _includes
+  - _includes/pre-devis.html
+  - _includes/pre-devis2.html
+  - _includes/devis.html
+  
 sass:
   sass_dir: assets/css/_scss
   style: compressed
