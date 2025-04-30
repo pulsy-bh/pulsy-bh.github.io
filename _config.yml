@@ -40,9 +40,9 @@ layouts_dir         : _layouts # Don't rename this, watch wouldn't't work
 data_dir            : _data # Don't rename this, watch wouldn't't work
 includes_dir        : _includes # Don't rename this, watch wouldn't't work
 
-sass:
-  sass_dir: assets/css/_scss
-  style: compressed
+# sass:
+#   sass_dir: assets/css/_scss
+#   style: compressed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
