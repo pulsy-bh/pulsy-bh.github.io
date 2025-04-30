@@ -70,3 +70,7 @@ sass:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+theme: ""
+
+remote_theme: ""
