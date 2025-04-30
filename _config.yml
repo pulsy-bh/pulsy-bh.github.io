@@ -25,8 +25,7 @@
 #  line in _config.yml. It will appear in your document head meta (for
 #  Google search results) and in your feed.xml site description.
 #baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://pulsy-bh.github.io" # Remplacez par votre nom d'utilisateur GitHub
-# baseurl: "" # Laissez vide pour un site à la racine
+url: "https://www.veranda-77.fr" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 plugins:
@@ -41,15 +40,9 @@ layouts_dir         : _layouts # Don't rename this, watch wouldn't't work
 data_dir            : _data # Don't rename this, watch wouldn't't work
 includes_dir        : _includes # Don't rename this, watch wouldn't't work
 
-include:
-  - _includes
-  - _includes/pre-devis.html
-  - _includes/pre-devis2.html
-  - _includes/devis.html
-  
-# sass:
-#   sass_dir: assets/css/_scss
-#   style: compressed
+sass:
+  sass_dir: assets/css/_scss
+  style: compressed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -70,7 +63,3 @@ include:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-# Désactive complètement les thèmes pour utiliser le layout personnalisé
-# theme: jekyll-theme-minimal
-# remote_theme: pages-themes/minimal
