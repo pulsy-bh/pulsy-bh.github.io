@@ -47,9 +47,9 @@ include:
   - _includes/pre-devis2.html
   - _includes/devis.html
   
-sass:
-  sass_dir: assets/css/_scss
-  style: compressed
+# sass:
+#   sass_dir: assets/css/_scss
+#   style: compressed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -72,5 +72,5 @@ sass:
 #   - vendor/ruby/
 
 # Désactive complètement les thèmes pour utiliser le layout personnalisé
-theme: jekyll-theme-minimal
-remote_theme: pages-themes/minimal
+# theme: jekyll-theme-minimal
+# remote_theme: pages-themes/minimal
