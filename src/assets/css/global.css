@@ -856,8 +856,8 @@ pre code {
 }
 
 .row {
-    /* margin-left : -15px; */
-    /* margin-right: -15px */
+    margin-left : -15px;
+    margin-right: -15px
 }
 
 .col-lg-1,
@@ -9223,7 +9223,6 @@ header .menu {
 
 header .fixmenu {
     background: #000;
-    width: 100vw;
     position  : fixed;
     top       : 0;
     left      : 0;
